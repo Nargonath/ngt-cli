@@ -1,6 +1,5 @@
 # Project specific
 dist
-templates/**/package-lock.json
 
 # Logs
 logs

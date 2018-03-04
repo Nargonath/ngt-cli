@@ -6,6 +6,7 @@
   "bin": "dist/bin/ngt-cli.js",
   "scripts": {
     "build": "babel lib -d dist -s --delete-dir-on-start",
+    "build-live": "babel lib -w -d dist -s --delete-dir-on-start",
     "lint": "eslint \"{{lib,test}/**/*.js,*.js}\" ",
     "test": "echo \"Error: no test specified\" && exit 1",
     "precommit": "lint-staged",
@@ -46,6 +47,7 @@
   "dependencies": {
     "chalk": "2.3.2",
     "cross-spawn": "6.0.5",
+    "fs-extra": "5.0.0",
     "update-notifier": "2.3.0"
   },
   "devDependencies": {

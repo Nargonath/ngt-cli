@@ -1,0 +1,8 @@
+{
+  "extends": ["@dixeed/eslint-config/next", "plugin:jest/recommended"],
+  "parser": "babel-eslint",
+  "plugins": ["jest"],
+  "env": {
+    "jest": true
+  }
+}

@@ -1,3 +1,6 @@
 {
-  "extends": ["@dixeed/eslint-config/next"]
+  "extends": ["@dixeed/eslint-config/next"],
+  "rules": {
+    "no-process-exit": 0
+  }
 }

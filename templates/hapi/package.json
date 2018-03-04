@@ -1,0 +1,52 @@
+{
+  "name": "hapi-project",
+  "version": "0.0.0-development",
+  "description": "Generic description ",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "nodemon lib/index.js --exec babel-node",
+    "debug": "nodemon --inspect lib/index.js --exec babel-node",
+    "test": "jest --coverage",
+    "test-live": "jest --watch",
+    "build": "babel lib -d dist --ignore '**/__tests__' -s --delete-dir-on-start",
+    "lint": "eslint \"{lib/**/*.js,*.js}\" ",
+    "precommit": "lint-staged",
+    "cm": "git-cz",
+    "commitmsg": "commitlint -e",
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Nargonath/placeholder.git"
+  },
+  "keywords": ["nodejs", "async-await", "hapijs"],
+  "author": "Nargonath <jonas.pauthier@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nargonath/placeholder/issues"
+  },
+  "homepage": "https://github.com/Nargonath/placeholder#readme",
+  "lint-staged": {
+    "{lib/**/*.js,*.js}": ["prettier --write", "eslint", "git add"],
+    "{lib/**/*.json,*.json}": ["prettier --write", "git add"]
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "prettier": {
+    "printWidth": 100,
+    "trailingComma": "all",
+    "singleQuote": true
+  },
+  "release": {
+    "getLastRelease": "last-release-git"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
