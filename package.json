@@ -11,7 +11,9 @@
     "semantic-release": "semantic-release",
     "travis-deploy-once": "travis-deploy-once"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "engines": {
     "node": ">=8.0.0"
   },
@@ -19,7 +21,14 @@
     "type": "git",
     "url": "https://github.com/Nargonath/ngt-cli.git"
   },
-  "keywords": ["cli", "nodejs", "development", "ngt-scripts", "async-await", "project-template"],
+  "keywords": [
+    "cli",
+    "nodejs",
+    "development",
+    "ngt-scripts",
+    "async-await",
+    "project-template"
+  ],
   "author": "Nargonath <jonas.pauthier@gmail.com>",
   "license": "MIT",
   "bugs": {
@@ -27,18 +36,20 @@
   },
   "homepage": "https://github.com/Nargonath/ngt-cli#readme",
   "lint-staged": {
-    "{{lib,test}/**/*.js,*.js}": ["prettier --write", "eslint", "git add"],
-    "{{lib,test}/**/*.json,*.json}": ["prettier --write", "git add"]
+    "{{lib,test}/**/*.js,*.js}": [
+      "prettier --write",
+      "eslint",
+      "git add"
+    ],
+    "{{lib,test}/**/*.json,*.json}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
-  },
-  "prettier": {
-    "printWidth": 100,
-    "trailingComma": "all",
-    "singleQuote": true
   },
   "dependencies": {
     "chalk": "2.3.2",
@@ -57,7 +68,6 @@
     "eslint": "4.18.2",
     "lint-staged": "7.0.0",
     "ngt-scripts": "^1.0.1",
-    "prettier": "1.11.1",
     "semantic-release": "^12.4.1",
     "travis-deploy-once": "^4.3.4"
   }

@@ -1,3 +1,3 @@
-'use strict';
+'use strict'
 
-module.exports = require('ngt-scripts/commitlint');
+module.exports = require('ngt-scripts/commitlint')
