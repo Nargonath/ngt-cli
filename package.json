@@ -6,7 +6,6 @@
   "bin": "dist/bin/ngt-cli.js",
   "scripts": {
     "build": "babel lib -d dist -s --delete-dir-on-start",
-    "lint": "eslint \"{{lib,test}/**/*.js,*.js}\" ",
     "test": "echo \"Error: no test specified\" && exit 1",
     "semantic-release": "semantic-release",
     "travis-deploy-once": "travis-deploy-once"
@@ -35,17 +34,6 @@
     "url": "https://github.com/Nargonath/ngt-cli/issues"
   },
   "homepage": "https://github.com/Nargonath/ngt-cli#readme",
-  "lint-staged": {
-    "{{lib,test}/**/*.js,*.js}": [
-      "prettier --write",
-      "eslint",
-      "git add"
-    ],
-    "{{lib,test}/**/*.json,*.json}": [
-      "prettier --write",
-      "git add"
-    ]
-  },
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
@@ -66,8 +54,7 @@
     "babel-plugin-transform-class-properties": "6.24.1",
     "babel-preset-env": "1.6.1",
     "eslint": "4.18.2",
-    "lint-staged": "7.0.0",
-    "ngt-scripts": "^1.0.1",
+    "ngt-scripts": "^1.1.1",
     "semantic-release": "^12.4.1",
     "travis-deploy-once": "^4.3.4"
   }
