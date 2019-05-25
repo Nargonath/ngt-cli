@@ -1,5 +1,3 @@
 'use strict';
 
-module.exports = {
-  extends: ['@commitlint/config-conventional'],
-};
+module.exports = require('ngt-scripts/commitlint');
