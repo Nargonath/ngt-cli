@@ -6,6 +6,7 @@
   "bin": "dist/bin/ngt-cli.js",
   "scripts": {
     "build": "babel lib -d dist -s --delete-dir-on-start",
+    "watch": "babel lib -d dist -s --delete-dir-on-start -w",
     "test": "echo \"Error: no test specified\" && exit 1",
     "semantic-release": "semantic-release",
     "travis-deploy-once": "travis-deploy-once"
