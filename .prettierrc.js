@@ -1,3 +1,3 @@
-'use strict'
+'use strict';
 
-module.exports = require('ngt-scripts/prettier')
+module.exports = require('ngt-scripts/prettier');
