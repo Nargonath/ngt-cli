@@ -55,6 +55,6 @@
     "babel-plugin-module-resolver": "^3.2.0",
     "babel-plugin-transform-class-properties": "6.24.1",
     "ngt-scripts": "^1.4.0",
-    "semantic-release": "^15.13.12"
+    "semantic-release": "^17.2.3"
   }
 }
